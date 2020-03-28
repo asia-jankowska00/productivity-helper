@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>ProductApp</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
+    <link rel="manifest" href="favicons/site.webmanifest" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -32,7 +36,6 @@
       integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
       crossorigin="anonymous"
     ></script>
-
     <script src="assets/js/script.js" defer></script>
   </head>
   <body>
@@ -42,15 +45,15 @@
           <h1 class="display-4">Productivity helper app</h1>
           <hr class="my-4" />
           <p>
-            Use the to-do list to structure your tasklist! Drag and
-            drop the to-dos notes to rearrange
+            Use the to-do list to structure your tasklist! Drag and drop the
+            to-dos notes to rearrange
           </p>
           <p>
-            Use the notes for any extra information you have to
-            remember :) Drag and drop the notes to rearrange
+            Use the notes for any extra information you have to remember :) Drag
+            and drop the notes to rearrange
           </p>
         </div>
-        
+
         <div class="row">
           <div id="todoList" class="col-12 col-md-6 mb-5">
             <h1>To-Do List</h1>
@@ -78,13 +81,23 @@
 
           <div id="notes" class="col-12 col-md-6">
             <h1>Notes</h1>
-            <button type="button" class="btn btn-light mb-3" id="addNoteBtn">New note <i class="fa fa-plus" aria-hidden="true"></i></button>
-              <div class="note-area">
-                <div class="draggable resizable card note text-dark flex-row-reverse">
-                    <i class="fa fa-times" aria-hidden="true"></i>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Note..."></textarea>
-                  </div>
-              </div> 
+            <button type="button" class="btn btn-light mb-3" id="addNoteBtn">
+              New note <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="note-area">
+              <div
+                class="draggable resizable card note text-dark flex-row-reverse"
+              >
+                <i class="fa fa-times" aria-hidden="true"></i>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Note..."
+                ></textarea>
+              </div>
+            </div>
           </div>
         </div>
       </div>
