@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="fluid-container full-height bg-dark text-light h-100">
+      <div class="root container full-height pt-4">
+        <div class="jumbotron jumbortron-fluid text-dark py-3">
+          <h1 class="display-4">Productivity helper app</h1>
+          <hr class="my-4" />
+          <p>
+            Use the to-do list to structure your tasklist! Drag and
+            drop the to-dos notes to rearrange
+          </p>
+          <p>
+            Use the notes for any extra information you have to
+            remember :) Drag and drop the notes to rearrange
+          </p>
+        </div>
+        
+        <div class="row">
+          <div id="todoList" class="col-12 col-md-6 mb-5">
+            <h1>To-Do List</h1>
+            <div class="form-group">
+              <div class="form-inline">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="todoInput"
+                  placeholder="Add new todo"
+                />
+                <button class="btn btn-light" id="addTodoBtn">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <ul class="list-group text-dark">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Example todo <i class="fa fa-times" aria-hidden="true"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div id="notes" class="col-12 col-md-6">
+            <h1>Notes</h1>
+            <button type="button" class="btn btn-light mb-3" id="addNoteBtn">New note <i class="fa fa-plus" aria-hidden="true"></i></button>
+              <div class="note-area">
+                <div class="draggable resizable card note text-dark flex-row-reverse">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Note..."></textarea>
+                  </div>
+              </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

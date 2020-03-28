@@ -1,0 +1,45 @@
+.completed {
+    text-decoration: line-through !important;
+    color: lightgrey;
+}
+
+li {
+    cursor: default;
+}
+
+.fa.fa-times {
+    /* color: red !important; */
+    font-size: 1.5rem;
+    cursor: default;
+}
+
+.draggable {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    padding: 25px;
+    cursor: grab;
+}
+
+.resizable {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+textarea {
+    width: 100%;
+    height: auto;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.note {
+    position: absolute;
+}
